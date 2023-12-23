@@ -1,0 +1,30 @@
+.pagination {
+  width: 200px;
+  margin: 0 auto;
+
+  &__bar {
+    height: 6px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 32px;
+    margin-bottom: 16px;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: #780096;
+      height: 100%;
+      width: var(--width);
+      border-radius: 32px;
+      transition: width 0.36s ease-in-out;
+    }
+  }
+
+  &__arrays {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 8px;
+  }
+}
